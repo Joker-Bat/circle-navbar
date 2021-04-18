@@ -17,24 +17,38 @@
   </head>
   <body>
     <nav class="navbar-container">
-      <div class="navbar-links">
+      <div class="navbar-links" id="navbarLinks">
         <a href="#" class="navbar-link navbar-link-1">
           <i class="fas fa-home"></i>
         </a>
         <a href="#" class="navbar-link navbar-link-2">
-          <i class="fas fa-share"></i>
+          <i class="fas fa-address-book"></i>
         </a>
         <a href="#" class="navbar-link navbar-link-3">
-          <i class="fas fa-man"></i>
+          <i class="fab fa-airbnb"></i>
         </a>
         <a href="#" class="navbar-link navbar-link-4">
           <i class="fas fa-phone"></i>
         </a>
         <a href="#" class="navbar-link navbar-link-5">
-          <i class="fas fa-like"></i>
+          <i class="fas fa-adjust"></i>
+        </a>
+        <a href="#" class="navbar-link navbar-link-6">
+          <i class="fas fa-eye-dropper"></i>
         </a>
       </div>
-      <div class="navbar-toggler"></div>
+      <div class="navbar-toggler" id="navbarToggler">
+        <i class="fas fa-times"></i>
+      </div>
     </nav>
+
+    <script>
+      const navbarToggler = document.getElementById("navbarToggler");
+      const navbarLinks = document.getElementById("navbarLinks");
+
+      navbarToggler.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
